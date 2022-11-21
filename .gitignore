@@ -1,0 +1,29 @@
+# .gitignore file for WordPress that ignores everything except:
+#
+# - .gitignore
+# - favicon.ico
+# - everything in mu-plugins
+# - my-plugin
+#
+
+/*
+!.gitignore
+!favicon.ico
+!wp-content
+!composer.json
+!composer.lock
+!.vscode/
+
+wp-content/*
+!wp-content/mu-plugins
+!wp-content/plugins
+!wp-content/themes
+
+wp-content/plugins/*
+!wp-content/plugins/my-plugin
+
+wp-content/themes/*
+!wp-content/themes/rima
+wp-content/themes/rima/node_modules
+wp-content/themes/rima/assets/css/
+
